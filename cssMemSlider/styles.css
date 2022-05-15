@@ -33,7 +33,7 @@ input {
   height: 100%;
   overflow: hidden;
   flex-shrink: 0;
-  padding: 1em;
+  padding: 0.5em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,19 +45,19 @@ input {
   width: auto;
 }
 .red {
-  background-color: #ff6347;
+  background-color: #8a8780;
 }
 .blue {
-  background-color: #47c5ff;
+  background-color: #bfbec6;
 }
 .green {
-  background-color: #9aff47;
+  background-color: #bcd7e2;
 }
 .yellow {
-  background-color: #ffe347;
+  background-color: #c0ac99;
 }
 .gray {
-  background-color: #a1a1a1;
+  background-color: #b3a394;
 }
 .text {
   grid-row: 2/3;
@@ -105,6 +105,7 @@ input {
 #radio4:checked ~ #text-4,
 #radio5:checked ~ #text-5 {
   opacity: 1;
+  z-index: 10;
 }
 #radio1:checked ~ #text-5,
 #radio2:checked ~ #text-1,
